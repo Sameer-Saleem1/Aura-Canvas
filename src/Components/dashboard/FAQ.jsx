@@ -17,15 +17,16 @@ export default function FAQ() {
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
-              Question 1
+              Is Aura Canvas compatible with e-commerce functionality?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde
-              accusantium consequatur labore provident ut autem aut
-              exercitationem. Necessitatibus fugit rem in eum recusandae laborum
-              dolorum quam esse harum laudantium.
+              Yes, Aura Canvas offers seamless integration with e-commerce
+              functionality, allowing you to enable secure online transactions
+              and streamline the selling process. You can set up payment
+              gateways, manage orders, and track sales directly from your
+              dashboard.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -33,15 +34,17 @@ export default function FAQ() {
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
-              Question 2
+              What kind of customer support does Aura Canvas provide?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde
-              accusantium consequatur labore provident ut autem aut
-              exercitationem. Necessitatibus fugit rem in eum recusandae laborum
-              dolorum quam esse harum laudantium.
+              Aura Canvas offers comprehensive customer support to assist you
+              with any questions or issues you may encounter. Our support team
+              is available via email and live chat during business hours to
+              provide timely assistance. Additionally, we provide documentation,
+              tutorials, and a community forum to help you find answers to
+              common questions and troubleshoot issues on your own.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -49,15 +52,17 @@ export default function FAQ() {
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
-              Question 3
+              Is there a limit to the number of pages or products I can add to
+              my website?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde
-              accusantium consequatur labore provident ut autem aut
-              exercitationem. Necessitatibus fugit rem in eum recusandae laborum
-              dolorum quam esse harum laudantium.
+              No, there are no limits on the number of pages or products you can
+              add to your Aura Canvas website. Whether you're showcasing a small
+              collection of products or managing a large catalog, our platform
+              can accommodate your needs. You have the flexibility to scale your
+              website as your business grows.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -65,15 +70,16 @@ export default function FAQ() {
         <Accordion defaultExpanded>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
-              Question 4
+              What support options are available if I encounter any issues?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde
-              accusantium consequatur labore provident ut autem aut
-              exercitationem. Necessitatibus fugit rem in eum recusandae laborum
-              dolorum quam esse harum laudantium.
+              If you encounter any issues or have questions about using Aura
+              Canvas, our dedicated support team is here to help. You can reach
+              out to us through our customer support portal, where you'll find
+              resources, FAQs, and the option to submit a support ticket for
+              personalized assistance.
             </Typography>
           </AccordionDetails>
         </Accordion>
