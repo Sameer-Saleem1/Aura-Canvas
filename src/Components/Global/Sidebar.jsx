@@ -202,13 +202,6 @@ export default function Sidebar() {
                 selected={selected}
                 setSelected={setSelected}
               />
-              <Item
-                title="Geography Chart"
-                to="/geography"
-                icon={<MapOutlinedIcon />}
-                selected={selected}
-                setSelected={setSelected}
-              />
             </Box>
           </Menu>
         </ProSidebar>

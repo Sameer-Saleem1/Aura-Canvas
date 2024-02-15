@@ -10,8 +10,9 @@ import Contacts from "./Components/dashboard/Contacts";
 import Invoices from "./Components/dashboard/Invoices";
 import ProfileForm from "./Components/dashboard/ProfileForm";
 import FAQ from "./Components/dashboard/FAQ";
-import Pie from "./Components/dashboard/Graphs/Pie";
-import BarChart from "./Components/dashboard/Graphs/BarChart";
+import Pie from "./Components/dashboard/pie";
+import Bar from "./Components/dashboard/bar";
+import Line from "./Components/dashboard/line";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -31,8 +32,9 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<ProfileForm />} />
               <Route path="/faq" element={<FAQ />} />
-              <Route path="/bar" element={<BarChart />} />
+              <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
             </Routes>
           </main>
         </div>
