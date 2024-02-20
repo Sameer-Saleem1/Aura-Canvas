@@ -34,22 +34,28 @@ const Dashboard = () => {
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
+              ":hover": {
+                backgroundColor: colors.blueAccent[600],
+              },
             }}
           >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+            <DownloadOutlinedIcon
+              sx={{
+                mr: "10px",
+              }}
+            />
             Download Reports
           </Button>
         </Box>
       </Box>
 
-      {/* GRID & CHARTS */}
       <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridAutoRows="140px"
         gap="20px"
       >
-        {/* ROW 1 */}
+        {/* 4 cards having emails, sales, clients, and traffic records */}
         <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
@@ -127,7 +133,7 @@ const Dashboard = () => {
           />
         </Box>
 
-        {/* ROW 2 */}
+        {/* 2 Cards of revenue generated and transactions made */}
         <Box
           gridColumn="span 8"
           gridRow="span 2"
@@ -219,7 +225,7 @@ const Dashboard = () => {
           ))}
         </Box>
 
-        {/* ROW 3 */}
+        {/* 2 cards of expenditure and sales quantity */}
         <Box
           gridColumn="span 6"
           gridRow="span 2"

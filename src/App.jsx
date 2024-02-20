@@ -13,6 +13,7 @@ import FAQ from "./Components/dashboard/FAQ";
 import Pie from "./Components/dashboard/pie";
 import Bar from "./Components/dashboard/bar";
 import Line from "./Components/dashboard/line";
+import LandingPage from "./LandingPage";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -21,12 +22,13 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <LandingPage />
         <div className="app" style={{ height: "auto" }}>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <main className="content">
-            <Topbar />
+            {/* <Topbar /> */}
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              {/* <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
@@ -34,7 +36,7 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
+              <Route path="/line" element={<Line />} /> */}
             </Routes>
           </main>
         </div>
