@@ -12,6 +12,7 @@ body,
 
 .app {
   display: flex;
+  flex-grow: 1;
   position: relative;
 }
 
@@ -28,4 +29,21 @@ body,
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+.link-hover {
+  position: relative;
+}
+.link-hover:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s linear;
+}
+
+.link-hover:hover::after {
+  width: 100%;
 }

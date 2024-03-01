@@ -95,13 +95,13 @@ export default function Sidebar() {
             {!isCollapsed && (
               <Box mb="10px">
                 <Box display="flex" justifyContent="center" alignItems="center">
-                  <img
+                  {/* <img
                     alt="profile-user"
                     width="100px"
                     height="100px"
                     src={logo}
                     style={{ cursor: "pointer", borderRadius: "50%" }}
-                  />
+                  /> */}
                 </Box>
               </Box>
             )}

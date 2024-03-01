@@ -4,16 +4,31 @@ import Topbar from "./Components/Global/TopBar";
 import Sidebar from "./Components/Global/Sidebar";
 import Dashboard from "./Components/dashboard/Dashboard";
 import Team from "./Components/dashboard/Team";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { ColorModeContext, useMode } from "./Theme";
 import Contacts from "./Components/dashboard/Contacts";
 import Invoices from "./Components/dashboard/Invoices";
 import ProfileForm from "./Components/dashboard/ProfileForm";
 import FAQ from "./Components/dashboard/FAQ";
-import Pie from "./Components/dashboard/pie";
 import Bar from "./Components/dashboard/bar";
+import Pie from "./Components/dashboard/pie";
 import Line from "./Components/dashboard/line";
-import LandingPage from "./LandingPage";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { ColorModeContext, useMode } from "./Theme";
+import LandingPage from "./Components/LandingPage"; // Import your landing page component
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
+
+// Reusable component to render sidebar and topbar along with content
+function SidebarLayout({ children }) {
+  return (
+    <div className="app " style={{ display: "flex" }}>
+      <Sidebar />
+      <main className="content">
+        <Topbar />
+        {children}
+      </main>
+    </div>
+  );
+}
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -22,26 +37,88 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <LandingPage />
-        <div className="app" style={{ height: "auto" }}>
-          {/* <Sidebar /> */}
-          <main className="content">
-            {/* <Topbar /> */}
-            <Routes>
-              {/* <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/invoices" element={<Invoices />} />
-              <Route path="/form" element={<ProfileForm />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} /> */}
-            </Routes>
-          </main>
+        <div className="app" style={{ height: "100vh" }}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard/*" element={<DashboardWithSidebar />} />
+            <Route
+              path="/team"
+              element={
+                <SidebarLayout>
+                  <Team />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/contacts"
+              element={
+                <SidebarLayout>
+                  <Contacts />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/invoices"
+              element={
+                <SidebarLayout>
+                  <Invoices />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/form"
+              element={
+                <SidebarLayout>
+                  <ProfileForm />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/faq"
+              element={
+                <SidebarLayout>
+                  <FAQ />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/bar"
+              element={
+                <SidebarLayout>
+                  <Bar />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/pie"
+              element={
+                <SidebarLayout>
+                  <Pie />
+                </SidebarLayout>
+              }
+            />
+            <Route
+              path="/line"
+              element={
+                <SidebarLayout>
+                  <Line />
+                </SidebarLayout>
+              }
+            />
+          </Routes>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
+  );
+}
+
+function DashboardWithSidebar() {
+  return (
+    <SidebarLayout>
+      <Dashboard />
+    </SidebarLayout>
   );
 }
 

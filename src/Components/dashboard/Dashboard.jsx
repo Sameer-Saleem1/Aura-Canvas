@@ -29,13 +29,13 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              backgroundColor: "#de2a35",
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
               ":hover": {
-                backgroundColor: colors.blueAccent[600],
+                backgroundColor: "#cb424a",
               },
             }}
           >
@@ -214,11 +214,7 @@ const Dashboard = () => {
                 </Typography>
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
-              <Box
-                backgroundColor={colors.greenAccent[500]}
-                p="5px 10px"
-                borderRadius="4px"
-              >
+              <Box backgroundColor="#d3868c" p="5px 10px" borderRadius="4px">
                 ${transaction.cost}
               </Box>
             </Box>
