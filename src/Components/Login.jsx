@@ -18,10 +18,9 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Log email and password to the console
+    //email and password to the console
     console.log("Email:", formData.email);
     console.log("Password:", formData.password);
-    // Handle form submission logic here
   };
 
   return (
@@ -37,11 +36,12 @@ const Login = () => {
       <Box
         sx={{
           border: "1px solid white",
-          borderRadius: "5px",
+          borderRadius: "15px",
           padding: "20px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          boxShadow: "5px 5px 25px  rgba(255,255,255,0.2)",
         }}
       >
         <Typography component="h1" variant="h2">
