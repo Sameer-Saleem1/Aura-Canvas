@@ -47,3 +47,7 @@ body,
 .link-hover:hover::after {
   width: 100%;
 }
+
+#MenuButton a:hover {
+  background-color: #e6e6e6;
+}

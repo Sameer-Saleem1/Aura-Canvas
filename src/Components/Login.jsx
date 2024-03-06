@@ -44,11 +44,12 @@ const Login = () => {
           boxShadow: "5px 5px 25px  rgba(255,255,255,0.2)",
         }}
       >
-        <Typography component="h1" variant="h2">
+        <Typography component="h1" variant="h1">
           Login
         </Typography>
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
           <TextField
+            type="email"
             margin="normal"
             required
             fullWidth

@@ -45,11 +45,12 @@ const SignUp = () => {
           boxShadow: "5px 5px 25px  rgba(255,255,255,0.2)",
         }}
       >
-        <Typography component="h1" variant="h2">
+        <Typography component="h1" variant="h1">
           Sign Up
         </Typography>
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
           <TextField
+            type="email"
             margin="normal"
             required
             fullWidth
@@ -102,7 +103,7 @@ const SignUp = () => {
         <Typography sx={{ mt: 2 }} component="div">
           Already have an account?{" "}
           <Link
-            to="/signup"
+            to="/login"
             className="link-hover"
             style={{
               textDecoration: "none",

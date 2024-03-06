@@ -214,7 +214,11 @@ const Dashboard = () => {
                 </Typography>
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
-              <Box backgroundColor="#d3868c" p="5px 10px" borderRadius="4px">
+              <Box
+                backgroundColor={colors.blueAccent[700]}
+                p="5px 10px"
+                borderRadius="4px"
+              >
                 ${transaction.cost}
               </Box>
             </Box>
