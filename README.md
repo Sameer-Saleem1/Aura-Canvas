@@ -23,7 +23,7 @@ Aura Canvas is a dynamic website management platform tailored to empower influen
 1. **Clone the Repository:** Clone the Aura Canvas repository to your local machine:
 
     ```
-    git clone https://github.com/your-username/aura-canvas.git
+    git clone https://github.com/Sameer-Saleem1/aura-canvas.git
     ```
 
 2. **Install Dependencies:** Navigate to the project directory and install the necessary dependencies:
