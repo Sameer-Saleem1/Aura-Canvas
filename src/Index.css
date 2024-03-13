@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 html,
 body,
@@ -7,7 +8,7 @@ body,
 .content {
   height: 100%;
   width: 100%;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .app {
@@ -50,4 +51,45 @@ body,
 
 #MenuButton a:hover {
   background-color: #e6e6e6;
+}
+
+/*--------------------------------- Hero Section -------------------------------------*/
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  border-radius: 15px;
+  /* width: 750px; */
+  margin: 2rem 6rem;
+  background: url("./assets/hero-bg.png") no-repeat;
+  background-position: center;
+  /* filter: brightness(0.8); */
+  /* backdrop-filter: brightness(0.8);
+  align-items: center;
+  position: relative; */
+}
+
+.hero-container h1 {
+  text-transform: uppercase;
+  font-size: 65px;
+  text-align: center;
+  color: white;
+  line-height: 4.5rem;
+  margin: 10px 0;
+  font-weight: 900;
+}
+
+.hero-container img {
+  padding-left: 10rem;
+  margin: 0;
+  height: 60px;
+  /* width: 200px; */
+}
+
+.hero-container h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
 }

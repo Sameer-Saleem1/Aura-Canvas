@@ -13,7 +13,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "@mui/material";
-export default function Navbar() {
+
+export default function MainNav() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const isMobile = useMediaQuery("(max-width:600px)");
 
@@ -26,23 +27,26 @@ export default function Navbar() {
   };
   return (
     <AppBar
-      position="static"
       sx={{
-        bgcolor: "white",
+        bgcolor: "#FFF9F1",
         color: "black",
+        boxShadow: "none",
+        paddingTop: "10px",
+        paddingLeft: "5rem",
       }}
     >
-      <Box
-        sx={{
-          boxShadow:
-            "0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset",
-        }}
-      >
+      <Box>
         <Toolbar>
           <Typography
-            variant="h2"
+            variant="h3"
             component="div"
-            sx={{ flexGrow: 1, fontWeight: "bold" }}
+            sx={{
+              flexGrow: 1,
+              fontWeight: "bold",
+              color: "black",
+              boxShadow: "none",
+              letterSpacing: "1px",
+            }}
           >
             AuraCanvas
           </Typography>
@@ -63,14 +67,20 @@ export default function Navbar() {
                 onClose={handleClose}
               >
                 <MenuItem onClick={handleClose} component={Link} to="#about">
-                  About Us
+                  Home
                 </MenuItem>
                 <MenuItem
                   onClick={handleClose}
                   component={Link}
                   to="#documentation"
                 >
-                  Documentation
+                  Contact us
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="#blog">
+                  Blog
+                </MenuItem>
+                <MenuItem onClick={handleClose} component={Link} to="#about">
+                  About
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/login">
                   Login
@@ -82,11 +92,17 @@ export default function Navbar() {
             </>
           ) : (
             <div id="MenuButton">
-              <Button color="inherit" component={Link} to="#about">
-                About Us
+              <Button color="inherit" component={Link} to="#home">
+                Home
               </Button>
-              <Button color="inherit" component={Link} to="#documentation">
-                Documentation
+              <Button color="inherit" component={Link} to="#contact">
+                Contact Us
+              </Button>
+              <Button color="inherit" component={Link} to="#blog">
+                Blog
+              </Button>
+              <Button color="inherit" component={Link} to="#about">
+                About
               </Button>
               <Button color="inherit" component={Link} to="/login">
                 Login

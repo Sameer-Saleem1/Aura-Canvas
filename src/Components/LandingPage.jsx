@@ -1,34 +1,20 @@
-import React from "react";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  Typography,
-  Button,
-  IconButton,
-  Menu,
-  MenuItem,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
-import { useMediaQuery } from "@mui/material";
-import Navbar from "./LandingPageComponents/Navbar";
+import { Box } from "@mui/material";
+import HeroSection from "./LandingPageComponents/HeroSection";
+import MainNav from "./LandingPageComponents/MainNav";
 
 const LandingPage = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const isMobile = useMediaQuery("(max-width:600px)");
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <>
-      <Navbar />
+      <MainNav />
+      <Box
+        sx={{
+          bgcolor: "#FFF9F1",
+          marginTop: "4rem",
+          width: "100%",
+        }}
+      >
+        <HeroSection />
+      </Box>
     </>
   );
 };
