@@ -1,7 +1,6 @@
 .brand-container {
   background-color: #ffff;
-  padding: 5rem;
-  padding-bottom: 4rem;
+  padding: 3rem 5rem;
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
@@ -111,7 +110,7 @@
 
 /*------------------------------------ Media Query----------------------------------  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .brand-container {
     padding: 0.5rem;
   }
@@ -166,5 +165,62 @@
 
   .left .journey button:hover {
     transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .left-images img {
+    margin: 5px 0.5rem;
+    width: 140px;
+    object-fit: cover;
+  }
+  .left .journey {
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .brand-container {
+    padding: 1rem 2rem;
+  }
+  .brand-img {
+    height: 100%;
+    display: none;
+  }
+  .brand-img img {
+    width: 115px;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+  .left {
+    width: 100%;
+  }
+
+  .left-images {
+    display: flex;
+    width: 100%;
+  }
+  .left-images > div {
+    max-width: 100%;
+  }
+
+  .left-images img {
+    margin: 10px 0rem;
+
+    width: 99%;
+    object-fit: cover;
+  }
+
+  .left .journey h1 {
+    font-size: 45px;
+    line-height: 1;
+  }
+  .left .journey p {
+    font-size: 20px;
+  }
+
+  .left .journey button {
+    font-size: 20px;
+    padding: 5px 15px;
   }
 }
