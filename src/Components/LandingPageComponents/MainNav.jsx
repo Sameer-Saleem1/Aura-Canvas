@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   AppBar,
   Box,
@@ -25,6 +24,7 @@ export default function MainNav() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <AppBar
       sx={{
@@ -32,11 +32,10 @@ export default function MainNav() {
         color: "black",
         boxShadow: "none",
         paddingTop: "10px",
-        paddingLeft: "5rem",
       }}
     >
       <Box>
-        <Toolbar>
+        <Toolbar sx={{ paddingLeft: isMobile ? "0" : "5rem" }}>
           <Typography
             variant="h3"
             component="div"
@@ -44,8 +43,8 @@ export default function MainNav() {
               flexGrow: 1,
               fontWeight: "bold",
               color: "black",
-              boxShadow: "none",
               letterSpacing: "1px",
+              ml: isMobile ? "1rem" : "0", // Adjust margin left for mobile view
             }}
           >
             AuraCanvas
@@ -57,7 +56,7 @@ export default function MainNav() {
                 edge="start"
                 aria-label="menu"
                 onClick={handleClick}
-                sx={{ mr: 2 }}
+                sx={{ mr: 2, bgcolor: "grey", color: "white" }} // Set background color for hamburger icon
               >
                 <MenuIcon />
               </IconButton>

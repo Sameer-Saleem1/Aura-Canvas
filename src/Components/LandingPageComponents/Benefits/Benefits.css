@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 768px) {
   .benefits-container {
-    padding: 1.5rem 20px;
+    padding: 1.5rem 20px 0 20px;
   }
 
   .benefits-container .benefits {
@@ -98,11 +98,11 @@
   }
   .benefit-card-container {
     grid-template-columns: auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 
   .benefit-card {
-    margin: 1.5rem 1rem;
+    margin: 1rem 1rem;
     height: 250px;
   }
 
@@ -121,10 +121,12 @@
 
   .empower {
     margin-top: 1rem;
+    margin: 0 1.5rem;
   }
 
   .empower h2 {
     font-size: 16px;
     line-height: 22px;
+    margin-bottom: 0;
   }
 }

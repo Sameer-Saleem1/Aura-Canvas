@@ -131,10 +131,17 @@
 
   .left-images {
     display: flex;
+    width: 100%;
   }
+  .left-images > div {
+    max-width: 100%;
+  }
+
   .left-images img {
-    margin: 3px;
-    height: 125px;
+    margin: 5px 0.5rem;
+
+    width: 90%;
+    object-fit: cover;
   }
 
   .left .journey {

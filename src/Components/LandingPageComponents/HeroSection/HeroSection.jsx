@@ -31,7 +31,7 @@ export default function HeroSection() {
       {/* Hero Section */}
       <div id="hero-section" className="hero-container">
         <div className="hero-image"></div>
-        <div>
+        <div className=" text">
           <h1>
             WELCOME TO THE <br /> <span> future </span> of <br />{" "}
             <span>CREATOR-LED</span> D2C <br /> BRANDS{" "}
@@ -44,7 +44,7 @@ export default function HeroSection() {
       {/* Launch Section */}
       <div className="launch">
         <h3>Launch Your Own Sustainable Fashion Line With Aura Canvas</h3>
-        {/* Conditionally render the button based on isInHeroSection */}
+
         {isInHeroSection && (
           <Link to={"./signup"}>
             <button>

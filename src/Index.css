@@ -66,15 +66,3 @@ body,
 #MenuButton a:hover {
   background-color: #e6e6e6;
 }
-
-@media screen and (max-width: 768px) {
-  .css-1bs48ui-MuiPaper-root-MuiAppBar-root {
-    padding-left: 0 !important;
-  }
-
-  .css-et06q1-MuiButtonBase-root-MuiIconButton-root {
-    background-color: rgb(118, 118, 118) !important;
-    margin-right: 0 !important;
-    margin-bottom: 10px !important;
-  }
-}
