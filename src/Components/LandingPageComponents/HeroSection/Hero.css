@@ -118,7 +118,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   .hero-container > .hero-image {
@@ -140,7 +140,7 @@
     height: 10px;
     bottom: 2.5rem;
     left: -4.5rem;
-    width: 300px;
+    width: 100%;
   }
 
   .hero-container h3 {
@@ -151,12 +151,12 @@
   }
 
   .launch {
-    margin: 10px;
-    bottom: 110px;
+    margin: 5px;
+    bottom: 155px;
     left: 0;
   }
   .launch h3 {
-    margin: 20px 0px 20px 20px;
+    margin: 15px;
     font-weight: 600;
     font-size: 12px;
     /* text-align: center; */
@@ -165,8 +165,7 @@
   }
 
   .launch button {
-    margin-left: 20px !important;
-    margin: 0;
+    margin: 5px !important;
     white-space: nowrap;
     cursor: pointer;
     border-radius: 40px;
