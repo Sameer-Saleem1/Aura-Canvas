@@ -2,6 +2,8 @@ import { Box } from "@mui/material";
 import HeroSection from "./LandingPageComponents/HeroSection/HeroSection";
 import MainNav from "./LandingPageComponents/MainNav";
 import Brand from "./LandingPageComponents/BuildBrand/Brand";
+import Benefits from "./LandingPageComponents/Benefits/Benefits";
+import Manufacture from "./LandingPageComponents/Manufacture/Manufacture";
 
 const LandingPage = () => {
   return (
@@ -16,6 +18,8 @@ const LandingPage = () => {
       >
         <HeroSection />
         <Brand />
+        <Benefits />
+        <Manufacture />
       </Box>
     </>
   );

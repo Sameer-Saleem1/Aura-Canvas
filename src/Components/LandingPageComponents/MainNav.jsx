@@ -28,7 +28,7 @@ export default function MainNav() {
   return (
     <AppBar
       sx={{
-        bgcolor: "#FFF9F1",
+        bgcolor: "#ffff",
         color: "black",
         boxShadow: "none",
         paddingTop: "10px",

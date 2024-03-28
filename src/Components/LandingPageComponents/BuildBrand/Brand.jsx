@@ -3,6 +3,7 @@ import "./Brand.css";
 import brand from "../img/brand.png";
 import makeup from "../img/makeup.png";
 import girl from "../img/girl.png";
+import { Link } from "react-router-dom";
 
 export default function Brand() {
   return (
@@ -13,8 +14,8 @@ export default function Brand() {
             Start your brand <br /> journey.
           </h1>
           <p>
-            Join the sustainable fashion revolution with zero Invesment <br />{" "}
-            and expert support. Let your passion become your brand.
+            Join the sustainable fashion revolution with zero Invesment and
+            expert support. Let your passion become your brand.
           </p>
           <button>book a meeting</button>
         </div>
@@ -29,11 +30,6 @@ export default function Brand() {
       </div>
       <div className="brand-img">
         <img src={brand} alt="brand image" />
-        <div className="brand-button">
-          <button>
-            <h3>Sign Up</h3>
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -1,0 +1,121 @@
+.manufacture-container {
+  padding: 5rem 7rem;
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* align-items: center;
+  justify-content: center; */
+  column-gap: 0.5rem;
+}
+
+.partner {
+  background-color: #004aad;
+  padding: 2rem 1rem 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  width: 600px;
+  height: 100%;
+}
+
+.partner h1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+  font-size: 35px;
+  letter-spacing: 0.75px;
+  margin-bottom: 1rem;
+}
+
+.partner p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.75px;
+}
+
+.partner button {
+  font-size: 19px;
+  font-family: var(--Urbanist-font);
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin-bottom: 0.5rem;
+  border: 2px solid #dcb4f3;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ff52a8;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.partner button:hover {
+  transform: scale(1.05);
+}
+
+.manufacture-right {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 500px;
+}
+
+.manufacture-right .art {
+  width: 100%;
+}
+.art img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .manufacture-container {
+    padding: 2rem;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner {
+    padding: 1rem;
+    width: 290px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 1rem !important;
+  }
+
+  .partner h1 {
+    white-space: inherit;
+    line-height: 1.25;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .partner p {
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+  }
+
+  .partner button {
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+  .manufacture-right {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0 10px;
+    width: 100%;
+  }
+
+  .manufacture-right .art {
+    width: 290px;
+  }
+  .art img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+}

@@ -1,9 +1,10 @@
 /*--------------------------------- Hero Section -------------------------------------*/
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
   height: 85%;
   margin: 2rem 6rem;
   position: relative;
@@ -22,7 +23,7 @@
 .hero-container h1 {
   position: absolute;
   text-transform: uppercase;
-  font-size: 65px;
+  font-size: clamp(30px, 65px, 65px);
   text-align: center;
   color: white;
   line-height: 4.5rem;
@@ -42,7 +43,7 @@
   margin: 0;
   height: 60px;
   bottom: 7rem;
-  left: 13rem;
+  left: 8rem;
   /* width: 200px; */
 }
 
@@ -92,4 +93,89 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 5px;
+}
+
+.css-1l2kbof {
+  background-color: #ffff !important;
+}
+.brand-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  border-radius: 50px;
+  padding: 13px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------ Media Query --------------------------------  */
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: 55%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .hero-container > .hero-image {
+    object-fit: contain;
+    border-radius: 0;
+  }
+
+  .hero-container h1 {
+    font-size: 25px;
+    line-height: 2rem;
+    margin: 10px 50px;
+    font-weight: 600;
+    top: 0.5rem;
+    left: 0;
+  }
+
+  .hero-container img {
+    margin: 0;
+    height: 10px;
+    bottom: 2.5rem;
+    left: -4.5rem;
+    width: 300px;
+  }
+
+  .hero-container h3 {
+    bottom: 1rem;
+    left: 4rem;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .launch {
+    margin: 10px;
+    bottom: 110px;
+    left: 0;
+  }
+  .launch h3 {
+    margin: 20px 0px 20px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    /* text-align: center; */
+    letter-spacing: 0.25px;
+    line-height: 1;
+  }
+
+  .launch button {
+    margin-left: 20px !important;
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+
+  .launch button > h3 {
+    font-size: 15px;
+    margin: 15px;
+    font-family: var(--Urbanist-font);
+  }
 }

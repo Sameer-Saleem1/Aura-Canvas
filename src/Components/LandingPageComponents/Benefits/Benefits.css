@@ -1,0 +1,130 @@
+.benefits-container {
+  background-color: #ffff;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 3rem 0;
+}
+
+.benefits-container .benefits {
+  font-size: 55px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--Norm-font);
+  color: #004aad;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+.benefit-card-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 6rem;
+}
+.benefits-container .benefits span {
+  text-transform: none;
+  color: #ff52a8;
+  margin: 0;
+}
+
+.benefit-card {
+  width: 200px;
+  height: 300px;
+  margin: 0.5rem 1rem;
+  background-color: #fff9f1;
+  /* background-color: rgb(201, 201, 128); */
+  padding: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+.benefit-card p {
+  text-align: center;
+  margin: 0;
+  /* font-size: 16px; */
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #004aad;
+  line-height: 1.75;
+  font-family: var(--Urbanist-font);
+  text-transform: uppercase;
+}
+
+.benefit-card .image {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-card .image img {
+  width: 100px;
+}
+
+.empower {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empower h2 {
+  font-size: 19px;
+  text-align: center;
+  color: #004aad;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+/*-------------------------------- Media Query -------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .benefits-container {
+    padding: 1.5rem 20px;
+  }
+
+  .benefits-container .benefits {
+    font-size: 25px;
+  }
+  .benefit-card-container {
+    grid-template-columns: auto;
+    margin-top: 2rem;
+  }
+
+  .benefit-card {
+    margin: 1.5rem 1rem;
+    height: 250px;
+  }
+
+  .benefit-card p {
+    text-align: center;
+    margin: 0;
+    /* font-size: 16px; */
+  }
+
+  .benefit-card .image {
+    margin-top: 1rem;
+  }
+  .benefit-card .image img {
+    width: 90px;
+  }
+
+  .empower {
+    margin-top: 1rem;
+  }
+
+  .empower h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
