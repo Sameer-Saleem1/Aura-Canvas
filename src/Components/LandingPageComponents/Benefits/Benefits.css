@@ -88,7 +88,7 @@
 
 /*-------------------------------- Media Query -------------------------------------*/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 767px) {
   .benefits-container {
     padding: 1.5rem 20px 0 20px;
   }
@@ -176,7 +176,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1140px) {
   .benefits-container {
     padding: 1.5rem 20px 0 20px;
   }

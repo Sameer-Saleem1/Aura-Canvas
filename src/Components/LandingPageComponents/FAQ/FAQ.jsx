@@ -10,12 +10,12 @@ function FAQ() {
 
         <h4>Common questions</h4>
         <h5 className="qs">What services does Aura Canvas offer?</h5>
-        <p className="ans">
+        <h6 className="ans">
           Aura Canvas provides celebrities, influencers, athletes, and more
           icons with opportunities to realize their entrepreneurial dreams
           through collaborations and partnerships in clothing, cosmetics, brand
           merchandising, and data-driven strategies.
-        </p>
+        </h6>
 
         <h5 className="qs">How can I collaborate with Aura Canvas?</h5>
         <h6 className="ans">

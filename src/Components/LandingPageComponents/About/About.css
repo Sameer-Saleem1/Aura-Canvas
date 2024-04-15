@@ -55,7 +55,13 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .about-container-grid {
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: auto;
+  }
+
   .about-container {
     padding: 0.5rem;
   }
@@ -70,7 +76,7 @@
     font-weight: 900;
   }
   .row-2 img {
-    /* height: 160px; */
+    height: 160px;
     width: 100%;
     margin-bottom: 0.5rem;
     object-fit: contain;
@@ -78,6 +84,7 @@
   }
   .about-pic img {
     margin-bottom: 0.5rem;
+    display: none;
   }
 
   .about-logo {

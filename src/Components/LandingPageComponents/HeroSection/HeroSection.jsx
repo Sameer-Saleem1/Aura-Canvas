@@ -43,14 +43,16 @@ export default function HeroSection() {
 
       {/* Launch Section */}
       <div className="launch">
-        <h3>Launch Your Own Sustainable Fashion Line With Aura Canvas</h3>
-
         {isInHeroSection && (
-          <Link to={"./signup"}>
-            <button>
-              <h3>Sign Up</h3>
-            </button>
-          </Link>
+          <>
+            {" "}
+            <h3>Launch Your Own Sustainable Fashion Line With Aura Canvas</h3>
+            <Link to={"./signup"}>
+              <button>
+                <h3>Sign Up</h3>
+              </button>
+            </Link>
+          </>
         )}
       </div>
 
