@@ -132,11 +132,42 @@
 }
 
 @media screen and (max-width: 320px) {
+  .benefits-container {
+    padding: 20px;
+  }
+
+  .benefits-container .benefits {
+    font-size: 25px;
+  }
   .benefits-container .benefits {
     font-size: 20px;
   }
   .benefit-card .image img {
     width: 70px;
+  }
+  .benefit-card-container {
+    grid-template-columns: auto auto;
+    margin-top: 0.5rem;
+  }
+
+  .benefit-card {
+    width: 140px;
+
+    margin: 1rem 0.5rem;
+    height: 250px;
+  }
+
+  .benefit-card p {
+    text-align: center;
+    margin: 0;
+    /* font-size: 16px; */
+  }
+
+  .benefit-card .image {
+    margin-top: 1rem;
+  }
+  .benefit-card .image img {
+    width: 80px;
   }
   .empower h2 {
     font-size: 14px;

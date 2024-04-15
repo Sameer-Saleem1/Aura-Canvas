@@ -57,11 +57,12 @@ export default function Sidebar() {
             padding: "5px 35px 5px 20px !important",
           },
           "& .pro-inner-item:hover": {
-            color: "#868dfb !important",
+            color: "#cc9b1e !important ",
           },
           "& .pro-menu-item.active": {
-            color: "#6870fa !important",
+            color: "#ffc226 !important ",
           },
+          height: "100%",
         }}
       >
         <ProSidebar collapsed={isCollapsed}>

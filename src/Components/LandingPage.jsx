@@ -4,6 +4,9 @@ import MainNav from "./LandingPageComponents/MainNav";
 import Brand from "./LandingPageComponents/BuildBrand/Brand";
 import Benefits from "./LandingPageComponents/Benefits/Benefits";
 import Manufacture from "./LandingPageComponents/Manufacture/Manufacture";
+import About from "./LandingPageComponents/About/About";
+import Contact from "./LandingPageComponents/Contact/Contact";
+import FAQ from "./LandingPageComponents/FAQ/FAQ";
 
 const LandingPage = () => {
   return (
@@ -20,6 +23,9 @@ const LandingPage = () => {
         <Brand />
         <Benefits />
         <Manufacture />
+        <About />
+        <Contact />
+        <FAQ />
       </Box>
     </>
   );

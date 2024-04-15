@@ -8,7 +8,11 @@ export default function Header({ title, subtitle }) {
     <Box>
       <Typography
         variant="h2"
-        color={colors.grey[100]}
+        color={
+          theme.palette.mode === "dark"
+            ? "colors.grey[100]"
+            : "colors.grey[800]"
+        }
         fontWeight="bold"
         sx={{ mb: "5px" }}
       >

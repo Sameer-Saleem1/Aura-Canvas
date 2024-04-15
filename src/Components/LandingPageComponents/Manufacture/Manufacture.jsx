@@ -1,5 +1,7 @@
 import React from "react";
 import art from "../img/art.png";
+import art1 from "../img/art1.png";
+import art2 from "../img/art2.png";
 import "./Manufacture.css";
 
 function Manufacture() {
@@ -23,7 +25,14 @@ function Manufacture() {
         <div className="art">
           <img src={art} alt="" />
         </div>
-        <div>b</div>
+        <div className="art-pic">
+          <div>
+            <img src={art1} alt="" />
+          </div>
+          <div>
+            <img src={art2} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

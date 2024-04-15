@@ -83,7 +83,7 @@ export default function Team() {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[400],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -91,7 +91,7 @@ export default function Team() {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[400],
           },
         }}
       >

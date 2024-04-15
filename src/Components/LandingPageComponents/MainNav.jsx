@@ -30,7 +30,7 @@ export default function MainNav() {
       sx={{
         bgcolor: "#ffff",
         color: "black",
-        boxShadow: "none",
+        boxShadow: " 5px 5px 15px rgba(0,0,0,0.3)",
         paddingTop: "10px",
       }}
     >

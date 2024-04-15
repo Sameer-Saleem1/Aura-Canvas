@@ -71,12 +71,13 @@
 .launch h3 {
   margin: 20px;
   font-weight: 600;
+  font-size: 18px;
   /* letter-spacing: 0.25px;
   word-spacing: 0.5px; */
 }
 
 .launch button {
-  margin: 20px 20px 20px 0;
+  margin: 20px;
   cursor: pointer;
   border-radius: 30px;
   border: none;
