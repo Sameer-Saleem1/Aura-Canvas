@@ -80,7 +80,7 @@ export default function Team() {
             borderBottom: "none",
           },
           "& .name-column--cell": {
-            color: colors.greenAccent[300],
+            color: colors.greenAccent[400],
           },
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: colors.blueAccent[400],
@@ -95,7 +95,11 @@ export default function Team() {
           },
         }}
       >
-        <DataGrid rows={mockDataTeam} columns={columns} />
+        <DataGrid
+          rows={mockDataTeam}
+          columns={columns}
+          sx={{ color: colors.grey[100] }}
+        />
       </Box>
     </Box>
   );

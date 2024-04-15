@@ -57,7 +57,7 @@ export default function Invoices() {
             borderBottom: "none",
           },
           "& .name-column--cell": {
-            color: colors.greenAccent[300],
+            color: colors.greenAccent[400],
           },
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: colors.blueAccent[400],
@@ -71,11 +71,16 @@ export default function Invoices() {
             backgroundColor: colors.blueAccent[400],
           },
           "& .MuiCheckbox-root": {
-            color: `${colors.greenAccent[200]} !important`,
+            color: `${colors.greenAccent[400]} !important`,
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
+        <DataGrid
+          checkboxSelection
+          rows={mockDataInvoices}
+          columns={columns}
+          sx={{ color: colors.grey[100] }}
+        />
       </Box>
     </Box>
   );

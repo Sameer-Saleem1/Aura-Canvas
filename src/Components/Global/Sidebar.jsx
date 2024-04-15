@@ -70,7 +70,11 @@ export default function Sidebar() {
             {/* LOGO AND MENU ICON */}
             <MenuItem
               onClick={() => setIsCollapsed(!isCollapsed)}
-              icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+              icon={
+                isCollapsed ? (
+                  <MenuOutlinedIcon sx={{ color: colors.grey[300] }} />
+                ) : undefined
+              }
               style={{
                 margin: "10px 0 20px 0",
                 color: colors.grey[100],
@@ -87,7 +91,7 @@ export default function Sidebar() {
                     AuraCanvas
                   </Typography>
                   <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                    <MenuOutlinedIcon />
+                    <MenuOutlinedIcon sx={{ color: colors.grey[300] }} />
                   </IconButton>
                 </Box>
               )}

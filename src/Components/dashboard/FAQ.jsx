@@ -14,7 +14,7 @@ export default function FAQ() {
       <Header title={"FAQ"} subtitle={"Frequently Asked Questions Page"} />
 
       <Box mt={"20px"}>
-        <Accordion defaultExpanded>
+        <Accordion defaultExpanded sx={{ bgcolor: colors.grey[800] }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
               Is Aura Canvas compatible with e-commerce functionality?
@@ -31,7 +31,7 @@ export default function FAQ() {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion defaultExpanded>
+        <Accordion defaultExpanded sx={{ bgcolor: colors.grey[800] }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
               What kind of customer support does Aura Canvas provide?
@@ -49,7 +49,7 @@ export default function FAQ() {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion defaultExpanded>
+        <Accordion defaultExpanded sx={{ bgcolor: colors.grey[800] }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
               Is there a limit to the number of pages or products I can add to
@@ -67,7 +67,7 @@ export default function FAQ() {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion defaultExpanded>
+        <Accordion defaultExpanded sx={{ bgcolor: colors.grey[800] }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h5" color={colors.greenAccent[500]}>
               What support options are available if I encounter any issues?

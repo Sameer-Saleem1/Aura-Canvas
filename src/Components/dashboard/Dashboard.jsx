@@ -215,7 +215,7 @@ const Dashboard = () => {
               </Box>
               <Box color={colors.grey[100]}>{transaction.date}</Box>
               <Box
-                backgroundColor={colors.blueAccent[700]}
+                backgroundColor={colors.blueAccent[400]}
                 p="5px 10px"
                 borderRadius="4px"
               >
