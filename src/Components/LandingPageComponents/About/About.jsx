@@ -3,7 +3,8 @@ import React from "react";
 import about1 from "../img/about1.png";
 import about2 from "../img/about2.png";
 import about3 from "../img/about3.png";
-import logo from "../img/art1.png";
+import about4 from "../img/about4.png";
+import about5 from "../img/about5.png";
 import bg from "../img/hero-bg.png";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -50,13 +51,13 @@ function About() {
 
           <Col xs={6} md={3}>
             <div className="row-2 none">
-              <img src={about1} alt="" />
+              <img src={about4} alt="" />
             </div>
           </Col>
 
           <Col xs={6} md={3}>
             <div className="row-2 none">
-              <img src={about1} alt="" />
+              <img src={about5} alt="" />
             </div>
           </Col>
         </Row>

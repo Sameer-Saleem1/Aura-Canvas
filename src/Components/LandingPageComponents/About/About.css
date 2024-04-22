@@ -9,6 +9,9 @@
 }
 
 .about-heading h1 {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-weight: bolder;
   font-size: 45px;
   color: #ff52a8;
 }
@@ -20,8 +23,9 @@
 }
 
 .about-text {
+  font-size: 25px !important;
   white-space: inherit;
-  line-height: 1.2;
+  line-height: 1.5;
   word-spacing: 2px;
 }
 
@@ -40,7 +44,7 @@
   display: block !important;
 }
 .fourth {
-  width: auto;
+  width: 250px;
   height: 250px;
   border-radius: 5px;
   object-fit: contain;
@@ -55,7 +59,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .about-container-grid {
     display: grid;
     column-gap: 0.5rem;
@@ -92,9 +96,9 @@
   }
 
   .fourth {
-    display: none;
+    display: none !important;
   }
   .none {
-    display: none;
+    display: none !important;
   }
 }
