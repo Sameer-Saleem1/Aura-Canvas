@@ -8,7 +8,19 @@
   text-align: center;
 }
 
+.FAQ-container {
+  padding: 1rem 7rem 2rem 7rem !important;
+  background: white;
+}
+
+.FAQ-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
 .FAQ-heading h2 {
+  color: black;
   font-size: 3em;
   font-weight: 700;
 }
@@ -18,11 +30,28 @@
   font-weight: 900;
 }
 
-.FAQ-container .qs {
-  font-size: 1.5em;
+.qs {
+  font-size: 1.1em;
 }
 
-.FAQ-container .ans {
-  font-size: 1;
+.ans {
+  font-size: 16px !important;
   font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .FAQ-container {
+    padding: 0.5rem !important;
+  }
+
+  .qs {
+    font-size: 0.9em;
+  }
+
+  .ans {
+    font-size: 12px !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
 }
