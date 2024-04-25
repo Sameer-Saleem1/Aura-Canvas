@@ -12,7 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.9",
     "@mui/material": "^5.15.9",
     "@mui/x-data-grid": "^6.19.4",
@@ -21,6 +22,7 @@
     "@nivo/geo": "^0.84.0",
     "@nivo/line": "^0.84.0",
     "@nivo/pie": "^0.84.0",
+    "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.3.3",
     "embla-carousel-autoplay": "^8.0.0-rc23",
     "embla-carousel-react": "^8.0.0-rc23",

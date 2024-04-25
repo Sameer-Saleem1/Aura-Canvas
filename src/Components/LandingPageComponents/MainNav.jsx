@@ -109,6 +109,33 @@ export default function MainNav() {
               <Button color="inherit" component={Link} to="/signup">
                 Sign Up
               </Button>
+              <Button
+                color="inherit"
+                component={Link}
+                to="/dashboard"
+                sx={{
+                  span: {
+                    transition: "transform 0.2s linear",
+                  },
+                  ":hover": {
+                    span: {
+                      transform: "translateX(7px)",
+                    },
+                  },
+                }}
+              >
+                Check out our Dashboard{" "}
+                <span
+                  style={{
+                    marginLeft: ".35rem",
+                    marginBottom: ".3rem",
+                    fontSize: "21px",
+                    padding: "0",
+                  }}
+                >
+                  &#x2192;
+                </span>
+              </Button>
             </div>
           )}
         </Toolbar>
